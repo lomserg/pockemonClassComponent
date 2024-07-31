@@ -1,9 +1,10 @@
 import { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import NavBar from "./components/layout/NavBar";
-
+import Dashboard from "./components/layout/Dashboard";
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -11,10 +12,12 @@ export default class App extends Component {
   state = {};
   render() {
     return (
-      <>
+      <div className="App">
         <NavBar />
-        <h1>fff</h1>
-      </>
+        <div className="conainer">
+          <Dashboard />
+        </div>
+      </div>
     );
   }
 }

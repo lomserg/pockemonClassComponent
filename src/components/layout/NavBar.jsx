@@ -5,7 +5,9 @@ class NavBar extends Component {
   render() {
     return (
       <>
-        <div>fff2</div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+          <a href="#">pockedex</a>
+        </nav>
       </>
     );
   }
